@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+}
+body {
+  margin: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/** =========================================
+
+Full page layout example.
+
+========================================= **/
+
+.container-grid-layout-example {
+  height: 100vh;
+  background: #f2f2f2;
+
+  /* Creates a grid container. */
+  display: grid;
+
+  /* Sets properties for grid container. */
+  grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end footer-start] 96px [footer-end];
+  grid-template-columns: [sider-start] 200px [sider-end content-start] auto [content-end];
+
+  /* Add spacing between each grid area. */
+  /* row-gap: 8px;
+  column-gap: 8px; */
+
+  grid-template-areas:
+    "header     header"
+    "sider      content"
+    "footer     footer";
+
+  /*grid-template:
+  /*  [header-start]    "header   header"   48px  [header-end]              /* Row 1 */
+  /*  [content-start]   "sider    content"  auto  [content-end]             /* Row 2 */
+  /*  [footer-start]    "footer   footer"   96px  [footer-end]              /* Row 3 */
+  /*  / [sider-start] 200px [sider-end content-start] auto [content-end];   /* Columns */
+
+  /* Using the 'fr' unit to divide content area evenly */
+  /* grid-template-columns: [sider-start] 200px [sider-end content-start] 2fr [content-end content-start] 2fr [content-end];
+  grid-template-areas:
+    "header     header     header"
+    "sider      content1   content2"
+    "footer     footer     footer"; */
+}
+
+header,
+aside,
+content,
+footer {
+  padding: 8px 16px;
+  font-family: "Fira Code", "Source Sans Pro", sans-serif;
+}
+
+header {
+  background: orange;
+
+  /* grid-row-start: header-start;
+  grid-row-end: header-end; 
+  grid-column-start: sider-start;
+  grid-column-end: content-end; */
+
+  /* grid-row: header-start / header-end;
+  grid-column: sider-start / content-end; */
+
+  /* grid-area: header-start / sider-start / header-end / content-end; */
+
+  grid-area: header;
+}
+
+aside {
+  background: lightgreen;
+
+  /* grid-area: content-start / sider-start / content-end / content-end; */
+
+  grid-area: sider;
+}
+
+content {
+  background: lightcoral;
+
+  /* grid-area: content-start / content-start / content-end / content-end; */
+
+  grid-area: content;
+}
+
+content:nth-of-type(1) {
+  /* grid-area: content1; */
+}
+content:nth-of-type(2) {
+  background: lightslategray;
+  /* grid-area: content2; */
+}
+
+footer {
+  background: lightblue;
+
+  /* grid-area: footer-start / sider-start / footer-end / content-end; */
+
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  .container-grid-layout-example {
+    grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end sider-start] 150px [sider-end footer-start] 96px [footer-end];
+    grid-template-columns: [content-start] 100vw [content-end];
+
+    grid-template-areas:
+      "header"
+      "content"
+      "sider"
+      "footer";
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-grid-layout-example {
+    height: unset;
+
+    grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end sider-start] auto [sider-end footer-start] 96px [footer-end];
+  }
+
+  /* adding height to show scrolling content*/
+  content {
+    height: 800px;
+  }
+  aside {
+    height: 300px;
+  }
+}

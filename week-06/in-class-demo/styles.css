@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsla(14, 100%, 50%, 0.9);
+  --secondary-color: #311d00;
+  --text-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header.main-header {
+  flex: 0 0 auto;
+
+  background: var(--primary-color);
+}
+
+header.main-header > nav.main-nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 8px 16px;
+  transition-duration: 600ms;
+}
+header.main-header > nav.main-nav a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+main.main {
+  padding: 16px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  main.main {
+    flex-direction: column;
+  }
+}
+
+main article.main-article {
+  padding: 8px 24px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+main article.main-article h1.article-title {
+  color: var(--primary-color);
+}
+
+figure.article-img-figure {
+  float: left;
+}
+
+figure.article-img-figure img.img {
+  transition: opacity 2s ease-out;
+  opacity: 1;
+  cursor: cell;
+}
+figure.article-img-figure img.img:hover {
+  opacity: 0;
+  /* filter: grayscale(50) blur(4px); */
+}
+
+figure.article-img-figure > figcaption.caption {
+  color: var(--secondary-color);
+  font-size: 80%;
+  margin-top: 8px;
+}
+
+aside.sider-links {
+  flex: 0 0 250px;
+
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  aside.sider-links {
+    width: 100%;
+  }
+}
+
+aside.sider-links h1 {
+  font-size: 20px;
+  margin-top: 8px;
+  color: var(--secondary-color);
+}
+
+aside.sider-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 0;
+  font-size: 80%;
+}
+
+aside.sider-links ul li {
+  flex: 0 1 40px;
+}
+
+aside.sider-links ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+aside.sider-links div.radiating-circle {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+aside.sider-links div.circle {
+  position: absolute;
+  border-radius: 44px;
+  border-width: 4px;
+  border-style: solid;
+  animation: radiate 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite,
+    fade 1.8s cubic-bezier(0.3, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes radiate {
+  0% {
+    top: 40px;
+    left: 40px;
+    width: 0;
+    height: 0;
+  }
+  to {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    border-color: #dbdbdb;
+  }
+  to {
+    border-color: hsla(0, 0%, 85.9%, 0);
+  }
+}
+
+form {
+  clear: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+form input {
+  margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  display: block;
+}
+
+form input:valid {
+  border-color: var(--primary-color);
+}
+
+/* form input[required] {
+  background-color: green;
+} */
+
+button.button {
+  border: none;
+  box-shadow: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+button.button.submit-button {
+  background: var(--primary-color);
+  color: white;
+}
+button.button.reset-button {
+  background: white;
+  color: var(--primary-color);
+}
+
+footer.main-footer {
+  margin-top: 24px;
+  padding: 16px 24px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/** Keyframe animation example. Add "animation-test" class to <h1> **/
+h1.animation-test {
+  animation: move 3s ease-in-out 2s;
+}
+@keyframes move {
+  from {
+    margin-left: 20%;
+    color: var(--primary-color);
+  }
+  to {
+    margin-left: 60%;
+    color: var(--secondary-color);
+  }
+}

@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Sorts Mill Goudy Italic';
+  src: url("./fonts/GoudyStM-Italic-webfont.eot");
+  src: url("./fonts/GoudyStM-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/GoudyStM-Italic-webfont.woff") format("woff"), url("./fonts/GoudyStM-Italic-webfont.ttf") format("truetype"), url("./fonts/GoudyStM-Italic-webfont.svg#procionoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src: url("./fonts/GoudyStM-webfont.eot");
+  src: url("./fonts/GoudyStM-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/GoudyStM-webfont.woff") format("woff"), url("./fonts/GoudyStM-webfont.ttf") format("truetype"), url("./fonts/GoudyStM-webfont.svg#procionoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("./fonts/raleway_thin-webfont.eot");
+  src: url("./fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/raleway_thin-webfont.woff") format("woff"), url("./fonts/raleway_thin-webfont.ttf") format("truetype"), url("./fonts/raleway_thin-webfont.svg#procionoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+@font-face {
+    font-family: 'Junction';
+    src: url('./fonts/Junction-webfont.eot');
+    src: url('./fonts/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Junction-webfont.woff') format('woff'),
+         url('./fonts/Junction-webfont.ttf') format('truetype'),
+         url('./fonts/Junction-webfont.svg#procionoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Linden Hill italic';
+    src: url('./fonts/LindenHill-Italic-webfont.eot');
+    src: url('./fonts/LindenHill-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/LindenHill-Italic-webfont.woff') format('woff'),
+         url('./fonts/LindenHill-Italic-webfont.ttf') format('truetype'),
+         url('./fonts/LindenHill-Italic-webfont.svg#procionoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Linden Hill';
+    src: url('./fonts/LindenHill-webfont.eot');
+    src: url('./fonts/LindenHill-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/LindenHill-webfont.woff') format('woff'),
+         url('./fonts/LindenHill-webfont.ttf') format('truetype'),
+         url('./fonts/LindenHill-webfont.svg#procionoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'procionoregular';
+    src: url('./fonts/Prociono-Regular-webfont.eot');
+    src: url('./fonts/Prociono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Prociono-Regular-webfont.woff') format('woff'),
+         url('./fonts/Prociono-Regular-webfont.ttf') format('truetype'),
+         url('./fonts/Prociono-Regular-webfont.svg#procionoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("./fonts/BebasNeue-webfont.eot");
+  src: url("./fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/BebasNeue-webfont.woff") format("woff"), url("./fonts/BebasNeue-webfont.ttf") format("truetype"), url("./fonts/BebasNeue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+@font-face {
+    font-family: 'League Gothic italic';
+    src: url('./fonts/leaguegothic-italic-webfont.eot');
+    src: url('./fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('./fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('./fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('./fonts/leaguegothic-regular-webfont.eot');
+    src: url('./fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('./fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('./fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('./fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('./fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('./fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('./fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('./fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('./fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('./fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('./fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+*/

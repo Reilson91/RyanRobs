@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+}
+body {
+  margin: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/** =========================================
+
+Full page layout example.
+
+========================================= **/
+
+.container-grid-layout-example {
+  height: 100vh;
+  background: #f2f2f2;
+
+  /* Creates a grid container. */
+  display: grid;
+
+  /* Sets properties for grid container. */
+  grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end];
+  grid-template-columns: [sider-start] 200px [sider-end content-start] auto [content-end];
+  
+  grid-template-areas:
+    "header     header"
+    "sider      content";
+}
+
+header,
+aside,
+content{
+  padding: 8px 16px;
+  font-family: sans-serif;
+}
+
+header {
+  background: #251d72;
+  color: #fafafa;
+  z-index: 2090;
+  
+  grid-area: header;
+}
+
+aside {
+  background: white;
+  border-right: 1px solid #eaeaea;
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.15);
+  z-index: 2020;
+  
+  grid-area: sider;
+}
+
+content {
+  background: #f2f2f2;
+  padding: 24px 32px;
+
+  overflow: auto;
+
+  grid-area: content;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(4, 280px ); */
+  grid-template-rows: repeat(100, 280px);
+
+  row-gap: 16px;
+  column-gap: 16px;
+
+}
+
+content > .card {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.09);
+  position: relative;
+}
+
+content > .card > h4.card-header {
+  padding-left: 16px;
+  border-bottom: 1px solid #eaeaea;
+  margin: 0;
+  line-height: 2.5;
+}
+
+content > .card > .card-body {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+content > .card > .card-footer {
+  background: #fafafa;
+  padding: 8px 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #eaeaea;
+}
+
+.button {
+  border: none;
+  background: #0066cc;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: 300ms;
+}
+
+.button:hover {
+  background: #014e9b;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container-grid-layout-example {
+    grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end sider-start] 150px [sider-end];
+    grid-template-columns: [content-start] 100vw [content-end];
+
+    grid-template-areas:
+      "header"
+      "content"
+      "sider";
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-grid-layout-example {
+    height: unset;
+
+    grid-template-rows: [header-start] 48px [header-end content-start] auto [content-end sider-start] auto [sider-end];
+  }
+
+  /* adding height to show scrolling content*/
+  content {
+    height: 800px;
+  }
+  aside {
+    height: 300px;
+  }
+}

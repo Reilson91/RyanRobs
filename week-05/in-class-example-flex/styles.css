@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+  font-family: "Fira Code", "Source Sans Pro", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+/** =========================================
+
+Flexbox Practice
+
+========================================= **/
+
+.container-flex {
+  height: 100vh;
+  background: #f2f2f2;
+
+  /* Creates a flex container. */
+  display: flex;
+
+  /* Sets flex properties for flex container. */
+  flex-direction: row; /* Row, row-reverse, column, or column reverse. */
+  flex-wrap: wrap; /* Should the items wrap? */
+  justify-content: start; /* justify = Main Axis */
+  /*align-content: flex-end; /* align-content = Cross Axis (entire container) */
+  /*align-items: flex-end; /* align-items = Cross Axis (individual rows or columns) */
+}
+
+/* Class added to all child elements of flex container. 
+   Creates flex items.                                  */
+.item {
+  background: rgb(46, 48, 167);
+  padding: 0 10px;
+  min-height: 100px;
+
+  /* Sets flex properties for flex items. */
+  flex-grow: 0; /* How the flex item grows to fill extra space. */
+  flex-shrink: 0; /* How the flex item shrinks to fit all items. */
+  flex-basis: 300px; /* The inital size (main axis) before distributing space. */
+  /*flex: 0 1 auto; /* [grow] [shrink] [basis] */
+}
+
+.item:nth-of-type(2n) {
+  background: rgb(52, 141, 57);
+  /* min-height: 200px; */
+}
+
+.item:nth-of-type(1) {
+}
+
+.item:nth-of-type(2) {
+}
+
+.item:nth-of-type(3) {
+}
+
+.item div {
+  height: 80px;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+  font-size: 24px;
+  font-family: "Fira Code", "Source Sans Pro", sans-serif;
+}
+
+.item div .light {
+  color: #aaaaaa;
+}
+
+/** =========================================
+
+Full page layout example.
+Uses "container-flex" from above.
+
+========================================= **/
+
+.container-flex-layout-example {
+  height: 100vh;
+  background: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: orange;
+
+  flex: 0 0 48px;
+}
+
+main {
+  border: 2px solid black;
+  background: red;
+
+  flex: 1 0 300px;
+  display: flex;
+}
+
+main aside {
+  background: lightgreen;
+
+  flex: 0 0 200px;
+}
+
+main content {
+  background: lightblue;
+
+  flex: 1 0 auto;
+}
+
+footer {
+  background: pink;
+
+  flex: 0 0 96px;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  main aside {
+    flex-basis: 100px;
+  }
+}

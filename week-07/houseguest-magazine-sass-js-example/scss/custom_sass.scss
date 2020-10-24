@@ -1,0 +1,418 @@
+@import url("fonts-custom.css");
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+/* line 13, ../components/sass/custom_sass.scss */
+#houseguest-bg, .navWidth {
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 24, ../components/sass/custom_sass.scss */
+.center {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: .4em; }
+
+/* line 30, ../components/sass/custom_sass.scss */
+.container {
+  /* 	padding-left: 0; */
+  background-color: white;
+  font-family: Georgia, Times, serif;
+  font-size: 1.35em; }
+  /* line 35, ../components/sass/custom_sass.scss */
+  .container img {
+    padding: 0; }
+  /* line 38, ../components/sass/custom_sass.scss */
+  .container p {
+    margin: 1.3em 0;
+    line-height: 1.4em; }
+  /* line 41, ../components/sass/custom_sass.scss */
+  .container a {
+    font-weight: bold;
+    /* text-decoration: underline; */ }
+
+/* line 51, ../components/sass/custom_sass.scss */
+.masthead p {
+  font-family: 'Sorts Mill Goudy', Georgia, Times, serif;
+  width: 100%;
+  padding: .2em;
+  margin: 0;
+  font-size: .8em; }
+  /* line 57, ../components/sass/custom_sass.scss */
+  .masthead p.title {
+    text-indent: .5em;
+    font-style: italic;
+    font-weight: normal;
+    font-size: .7em;
+    text-transform: none; }
+
+/*
+#header {
+  background-image: url("/assets/img/already-home-bg-1400.jpg");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 300px; 
+   h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: .1em;
+    margin: 0;
+    padding: .35em 2em; 
+    }
+	    }
+*/
+/* line 88, ../components/sass/custom_sass.scss */
+#fadeMenu, #navMenu {
+  right: 0;
+  top: 0;
+  width: 100%;
+  float: none; }
+
+/* line 98, ../components/sass/custom_sass.scss */
+.floating {
+  display: none;
+  z-index: 1000;
+  position: fixed; }
+
+/* line 103, ../components/sass/custom_sass.scss */
+.nav {
+  float: left; }
+  /* line 105, ../components/sass/custom_sass.scss */
+  .nav img {
+    height: 100%;
+    width: 100%; }
+  /* line 109, ../components/sass/custom_sass.scss */
+  .nav ul {
+    float: left;
+    display: block;
+    padding: 0 15px;
+   /*
+   @media (min-width: 1100px) { //to make room for the issue #2 sash
+	      padding: 0 15px 0 200px;
+}
+*/
+    background-color: #bbbcaf;
+    width: 100%;
+    margin-bottom: .3em;
+    height: 100%; }
+    /* line 122, ../components/sass/custom_sass.scss */
+    .nav ul li {
+      float: left;
+      list-style: none;
+      margin: 0 25px;
+      font-family: 'bebas_neueregular', Verdana, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.7em;
+      padding: .2em 0; }
+      /* line 132, ../components/sass/custom_sass.scss */
+      .nav ul li#nav-magname {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7em;
+        font-family: 'Raleway', arial, sans-serif;
+        font-weight: 100;
+        letter-spacing: .1em;
+        margin: 0;
+        margin-top: 5px; }
+      /* line 143, ../components/sass/custom_sass.scss */
+      .nav ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: normal;
+        display: block; }
+        /* line 148, ../components/sass/custom_sass.scss */
+        .nav ul li a:hover {
+          color: #cb2027; }
+
+/* line 156, ../components/sass/custom_sass.scss */
+img#img-submission {
+  max-width: 1159px;
+  width: 100%;
+  height: 100%; }
+
+/* line 163, ../components/sass/custom_sass.scss */
+.art .caption {
+  float: right;
+  font-size: .8em;
+  color: #999a8d; }
+  /* line 167, ../components/sass/custom_sass.scss */
+  .art .caption a {
+    color: #999a8d;
+    text-decoration: none;
+    font-weight: bold; }
+    /* line 172, ../components/sass/custom_sass.scss */
+    .art .caption a:hover {
+      text-decoration: underline; }
+
+/* line 178, ../components/sass/custom_sass.scss */
+.writing {
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 182, ../components/sass/custom_sass.scss */
+  .writing h1.author {
+    font-weight: 300; }
+    /* line 184, ../components/sass/custom_sass.scss */
+    .writing h1.author a {
+      color: inherit;
+      font-weight: 300;
+      text-decoration: none; }
+      /* line 188, ../components/sass/custom_sass.scss */
+      .writing h1.author a:hover {
+        text-decoration: underline; }
+
+/* line 195, ../components/sass/custom_sass.scss */
+@media (min-width: 768px) {
+	.prose p {
+  text-align: justify; }
+  }
+/* line 198, ../components/sass/custom_sass.scss */
+.prose hr {
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 2em; }
+
+/* line 204, ../components/sass/custom_sass.scss */
+.nottoowide p {
+  max-width: 690px; }
+
+/* line 207, ../components/sass/custom_sass.scss */
+.poem {
+  margin-bottom: 4em; }
+  /* line 213, ../components/sass/custom_sass.scss */
+  .poem h2 {
+    font-family: Garamond, Times, serif;
+    font-weight: 100;
+    letter-spacing: .15ex;
+    font-size: 26px;
+    text-transform: uppercase; }
+    /* line 219, ../components/sass/custom_sass.scss */
+    .poem h2.alllowercase {
+      text-transform: lowercase;
+      letter-spacing: 0ex; }
+
+/* line 227, ../components/sass/custom_sass.scss */
+.toc-auth-title-group {
+  margin-bottom: .5em; }
+
+/* line 232, ../components/sass/custom_sass.scss */
+#issue {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.2em;
+  font-weight: 300; }
+  /* line 238, ../components/sass/custom_sass.scss */
+  #issue h1.number {
+    text-transform: uppercase;
+    font-weight: 300; }
+  /* line 242, ../components/sass/custom_sass.scss */
+  #issue .author {
+    font-weight: bold; }
+    /* line 245, ../components/sass/custom_sass.scss */
+    #issue .author a {
+      text-decoration: none;
+      color: black;
+      font-weight: 300; }
+      /* line 250, ../components/sass/custom_sass.scss */
+      #issue .author a:hover {
+        text-decoration: underline; }
+  /* line 254, ../components/sass/custom_sass.scss */
+  #issue .work-title {
+    font-family: Garamond, Times, serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 2ex; }
+    /* line 259, ../components/sass/custom_sass.scss */
+    #issue .work-title a {
+      font-weight: normal;
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.1em;
+      letter-spacing: .01em; }
+      /* line 265, ../components/sass/custom_sass.scss */
+      #issue .work-title a:hover {
+        text-decoration: underline; }
+
+/* line 273, ../components/sass/custom_sass.scss */
+#content {
+  padding-top: 200px;
+  margin-bottom: 40px; }
+  /* line 276, ../components/sass/custom_sass.scss */
+  #content p {
+    font-size: 1em; }
+
+@media (min-width: 768px) {
+  /* line 282, ../components/sass/custom_sass.scss */
+  #content {
+    padding-top: 65px;
+    margin-bottom: 40px; }
+    /* line 285, ../components/sass/custom_sass.scss */
+    #content p {
+      font-size: 1em; } }
+/* line 291, ../components/sass/custom_sass.scss */
+img.image-main {
+  max-width: 1159px;
+  width: 100%;
+  height: 100%; }
+
+/* line 297, ../components/sass/custom_sass.scss */
+.contributors {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  /* line 303, ../components/sass/custom_sass.scss */
+  .contributors:hover {
+    text-decoration: underline; }
+
+/* line 309, ../components/sass/custom_sass.scss */
+.bio-photo p {
+  font-size: .6em !important; }
+/* line 312, ../components/sass/custom_sass.scss */
+.bio-photo img {
+  width: 100%;
+  max-width: 360px; }
+
+/* line 317, ../components/sass/custom_sass.scss */
+a#here {
+  color: #cb2027; }
+
+/* line 321, ../components/sass/custom_sass.scss */
+h2.main-page {
+  font-family: 'bebas_neueregular', Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.7em;
+  letter-spacing: 0; }
+
+/* line 329, ../components/sass/custom_sass.scss */
+.bottom-nav {
+  font-size: 1.5rem; }
+  /* line 332, ../components/sass/custom_sass.scss */
+  .bottom-nav > div {
+    display: block;
+    margin: 10px 0; }
+  /* line 338, ../components/sass/custom_sass.scss */
+  .bottom-nav a {
+    text-decoration: none; }
+    /* line 340, ../components/sass/custom_sass.scss */
+    .bottom-nav a:hover {
+      text-decoration: underline; }
+
+@media (min-width: 992px) {
+  /* line 348, ../components/sass/custom_sass.scss */
+  .mobile {
+    display: none; } }
+/* line 354, ../components/sass/custom_sass.scss */
+.desktop {
+  display: none; }
+
+@media (min-width: 992px) {
+  /* line 359, ../components/sass/custom_sass.scss */
+  .desktop {
+    display: inline-block; } }
+/* line 365, ../components/sass/custom_sass.scss */
+.submission-sash {
+  display: none; }
+
+@media (min-width: 1100px) {
+  /* line 369, ../components/sass/custom_sass.scss */
+  .submission-sash {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    z-index: 1001; }
+    /* line 375, ../components/sass/custom_sass.scss */
+    .submission-sash a {
+      border: none; } }
+/* line 382, ../components/sass/custom_sass.scss */
+#right {
+  text-align: right; }
+  /* to center the nav */
+  @media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+.nav>li>a:hover {
+	background-color: #bbbcaf;
+}
+
+#tlemail, #subscribe {
+  height: 30px;
+}
+
+#subscribe {
+  padding: 0 10px;
+  color: #BD4036;
+  font-family: bebas_neueregular;
+  font-size: 18px;
+}
+
+footer {
+  height: 40px;
+  padding-top: 5px;
+  background-color: #BBBCAF;
+margin: 0 auto;
+text-align: center;
+}
+
+.masthead p.email {
+	padding: 0;
+	text-indent: .5em;
+	margin-bottom: .3em;
+	margin-top: -.2em;
+}
+
+.masthead p.email a {
+	color: #999; 
+	font-size: .9em; 
+	text-decoration: none; 
+	font-weight: normal;
+	}
+	
+.masthead p.email a:hover {
+	text-decoration: underline;
+	}
+	
+/* override .masthead p */
+.masthead p {
+	padding: 0;
+}
+
+.ragged-right p {
+	text-align: left !important;
+}
+cite {
+	font-style: italic;
+}
+.centered-outside {
+	text-align: center;
+}
+p.nottoowide {
+  max-width: 690px; }
+.epigraph {
+	padding-left: 40px;
+	}
+#content .epigraph p {
+	font-size: .85em;
+}
+
+/* MANUAL additions */
+.indent {
+	text-indent: 50px;
+}
